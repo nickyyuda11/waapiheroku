@@ -32,7 +32,7 @@ const db = require('./helpers/db.js');
   
   const savedSession = await db.readSession();
   const client = new Client({
-    restartOnAuthFail: true,
+    restartOnAuthFail: false,
     puppeteer: {
       headless: true,
       args: [
